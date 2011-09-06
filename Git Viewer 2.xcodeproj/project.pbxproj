@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D67A597514168ACC0006289A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67A597414168ACC0006289A /* UIKit.framework */; };
+		D67A597714168ACC0006289A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67A597614168ACC0006289A /* Foundation.framework */; };
+		D67A597914168ACC0006289A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67A597814168ACC0006289A /* CoreGraphics.framework */; };
+		D67A597F14168ACC0006289A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D67A597D14168ACC0006289A /* InfoPlist.strings */; };
+		D67A598114168ACC0006289A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D67A598014168ACC0006289A /* main.m */; };
+		D67A598514168ACC0006289A /* Git_Viewer_2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D67A598414168ACC0006289A /* Git_Viewer_2AppDelegate.m */; };
+		D67A598814168ACC0006289A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D67A598614168ACC0006289A /* MainWindow.xib */; };
+		D67A598B14168ACC0006289A /* Git_Viewer_2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D67A598A14168ACC0006289A /* Git_Viewer_2ViewController.m */; };
+		D67A598E14168ACC0006289A /* Git_Viewer_2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D67A598C14168ACC0006289A /* Git_Viewer_2ViewController.xib */; };
+		D67A599614168ACC0006289A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67A599514168ACC0006289A /* SenTestingKit.framework */; };
+		D67A599714168ACC0006289A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67A597414168ACC0006289A /* UIKit.framework */; };
+		D67A599814168ACC0006289A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67A597614168ACC0006289A /* Foundation.framework */; };
+		D67A599914168ACC0006289A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67A597814168ACC0006289A /* CoreGraphics.framework */; };
+		D67A59A114168ACC0006289A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D67A599F14168ACC0006289A /* InfoPlist.strings */; };
+		D67A59A314168ACC0006289A /* Git_Viewer_2Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = D67A59A214168ACC0006289A /* Git_Viewer_2Tests.h */; };
+		D67A59A514168ACC0006289A /* Git_Viewer_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D67A59A414168ACC0006289A /* Git_Viewer_2Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D67A599A14168ACC0006289A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D67A596714168ACC0006289A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D67A596F14168ACC0006289A;
+			remoteInfo = "Git Viewer 2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D67A597014168ACC0006289A /* Git Viewer 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Git Viewer 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67A597414168ACC0006289A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D67A597614168ACC0006289A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D67A597814168ACC0006289A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D67A597C14168ACC0006289A /* Git Viewer 2-Info.plist */ = {isa = PBXFileReference; path = "Git Viewer 2-Info.plist"; sourceTree = "<group>"; };
+		D67A597E14168ACC0006289A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D67A598014168ACC0006289A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D67A598214168ACC0006289A /* Git Viewer 2-Prefix.pch */ = {isa = PBXFileReference; path = "Git Viewer 2-Prefix.pch"; sourceTree = "<group>"; };
+		D67A598314168ACC0006289A /* Git_Viewer_2AppDelegate.h */ = {isa = PBXFileReference; path = Git_Viewer_2AppDelegate.h; sourceTree = "<group>"; };
+		D67A598414168ACC0006289A /* Git_Viewer_2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Git_Viewer_2AppDelegate.m; sourceTree = "<group>"; };
+		D67A598714168ACC0006289A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		D67A598914168ACC0006289A /* Git_Viewer_2ViewController.h */ = {isa = PBXFileReference; path = Git_Viewer_2ViewController.h; sourceTree = "<group>"; };
+		D67A598A14168ACC0006289A /* Git_Viewer_2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Git_Viewer_2ViewController.m; sourceTree = "<group>"; };
+		D67A598D14168ACC0006289A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Git_Viewer_2ViewController.xib; sourceTree = "<group>"; };
+		D67A599414168ACC0006289A /* Git Viewer 2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Git Viewer 2Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67A599514168ACC0006289A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D67A599E14168ACC0006289A /* Git Viewer 2Tests-Info.plist */ = {isa = PBXFileReference; path = "Git Viewer 2Tests-Info.plist"; sourceTree = "<group>"; };
+		D67A59A014168ACC0006289A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D67A59A214168ACC0006289A /* Git_Viewer_2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Git_Viewer_2Tests.h; sourceTree = "<group>"; };
+		D67A59A414168ACC0006289A /* Git_Viewer_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Git_Viewer_2Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D67A596D14168ACC0006289A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67A597514168ACC0006289A /* UIKit.framework in Frameworks */,
+				D67A597714168ACC0006289A /* Foundation.framework in Frameworks */,
+				D67A597914168ACC0006289A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67A599014168ACC0006289A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67A599614168ACC0006289A /* SenTestingKit.framework in Frameworks */,
+				D67A599714168ACC0006289A /* UIKit.framework in Frameworks */,
+				D67A599814168ACC0006289A /* Foundation.framework in Frameworks */,
+				D67A599914168ACC0006289A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D67A596514168ACC0006289A = {
+			isa = PBXGroup;
+			children = (
+				D67A597A14168ACC0006289A /* Git Viewer 2 */,
+				D67A599C14168ACC0006289A /* Git Viewer 2Tests */,
+				D67A597314168ACC0006289A /* Frameworks */,
+				D67A597114168ACC0006289A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D67A597114168ACC0006289A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D67A597014168ACC0006289A /* Git Viewer 2.app */,
+				D67A599414168ACC0006289A /* Git Viewer 2Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D67A597314168ACC0006289A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D67A597414168ACC0006289A /* UIKit.framework */,
+				D67A597614168ACC0006289A /* Foundation.framework */,
+				D67A597814168ACC0006289A /* CoreGraphics.framework */,
+				D67A599514168ACC0006289A /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D67A597A14168ACC0006289A /* Git Viewer 2 */ = {
+			isa = PBXGroup;
+			children = (
+				D67A598314168ACC0006289A /* Git_Viewer_2AppDelegate.h */,
+				D67A598414168ACC0006289A /* Git_Viewer_2AppDelegate.m */,
+				D67A598614168ACC0006289A /* MainWindow.xib */,
+				D67A598914168ACC0006289A /* Git_Viewer_2ViewController.h */,
+				D67A598A14168ACC0006289A /* Git_Viewer_2ViewController.m */,
+				D67A598C14168ACC0006289A /* Git_Viewer_2ViewController.xib */,
+				D67A597B14168ACC0006289A /* Supporting Files */,
+			);
+			path = "Git Viewer 2";
+			sourceTree = "<group>";
+		};
+		D67A597B14168ACC0006289A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D67A597C14168ACC0006289A /* Git Viewer 2-Info.plist */,
+				D67A597D14168ACC0006289A /* InfoPlist.strings */,
+				D67A598014168ACC0006289A /* main.m */,
+				D67A598214168ACC0006289A /* Git Viewer 2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D67A599C14168ACC0006289A /* Git Viewer 2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D67A59A214168ACC0006289A /* Git_Viewer_2Tests.h */,
+				D67A59A414168ACC0006289A /* Git_Viewer_2Tests.m */,
+				D67A599D14168ACC0006289A /* Supporting Files */,
+			);
+			path = "Git Viewer 2Tests";
+			sourceTree = "<group>";
+		};
+		D67A599D14168ACC0006289A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D67A599E14168ACC0006289A /* Git Viewer 2Tests-Info.plist */,
+				D67A599F14168ACC0006289A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D67A596F14168ACC0006289A /* Git Viewer 2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D67A59A814168ACC0006289A /* Build configuration list for PBXNativeTarget "Git Viewer 2" */;
+			buildPhases = (
+				D67A596C14168ACC0006289A /* Sources */,
+				D67A596D14168ACC0006289A /* Frameworks */,
+				D67A596E14168ACC0006289A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Git Viewer 2";
+			productName = "Git Viewer 2";
+			productReference = D67A597014168ACC0006289A /* Git Viewer 2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D67A599314168ACC0006289A /* Git Viewer 2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D67A59AB14168ACC0006289A /* Build configuration list for PBXNativeTarget "Git Viewer 2Tests" */;
+			buildPhases = (
+				D67A598F14168ACC0006289A /* Sources */,
+				D67A599014168ACC0006289A /* Frameworks */,
+				D67A599114168ACC0006289A /* Resources */,
+				D67A599214168ACC0006289A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D67A599B14168ACC0006289A /* PBXTargetDependency */,
+			);
+			name = "Git Viewer 2Tests";
+			productName = "Git Viewer 2Tests";
+			productReference = D67A599414168ACC0006289A /* Git Viewer 2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D67A596714168ACC0006289A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = DmgCtrl;
+			};
+			buildConfigurationList = D67A596A14168ACC0006289A /* Build configuration list for PBXProject "Git Viewer 2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D67A596514168ACC0006289A;
+			productRefGroup = D67A597114168ACC0006289A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D67A596F14168ACC0006289A /* Git Viewer 2 */,
+				D67A599314168ACC0006289A /* Git Viewer 2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D67A596E14168ACC0006289A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67A597F14168ACC0006289A /* InfoPlist.strings in Resources */,
+				D67A598814168ACC0006289A /* MainWindow.xib in Resources */,
+				D67A598E14168ACC0006289A /* Git_Viewer_2ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67A599114168ACC0006289A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67A59A114168ACC0006289A /* InfoPlist.strings in Resources */,
+				D67A59A314168ACC0006289A /* Git_Viewer_2Tests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D67A599214168ACC0006289A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D67A596C14168ACC0006289A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67A598114168ACC0006289A /* main.m in Sources */,
+				D67A598514168ACC0006289A /* Git_Viewer_2AppDelegate.m in Sources */,
+				D67A598B14168ACC0006289A /* Git_Viewer_2ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67A598F14168ACC0006289A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67A59A514168ACC0006289A /* Git_Viewer_2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D67A599B14168ACC0006289A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D67A596F14168ACC0006289A /* Git Viewer 2 */;
+			targetProxy = D67A599A14168ACC0006289A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D67A597D14168ACC0006289A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D67A597E14168ACC0006289A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D67A598614168ACC0006289A /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D67A598714168ACC0006289A /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		D67A598C14168ACC0006289A /* Git_Viewer_2ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D67A598D14168ACC0006289A /* en */,
+			);
+			name = Git_Viewer_2ViewController.xib;
+			sourceTree = "<group>";
+		};
+		D67A599F14168ACC0006289A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D67A59A014168ACC0006289A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D67A59A614168ACC0006289A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D67A59A714168ACC0006289A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D67A59A914168ACC0006289A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Git Viewer 2/Git Viewer 2-Prefix.pch";
+				INFOPLIST_FILE = "Git Viewer 2/Git Viewer 2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D67A59AA14168ACC0006289A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Git Viewer 2/Git Viewer 2-Prefix.pch";
+				INFOPLIST_FILE = "Git Viewer 2/Git Viewer 2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D67A59AC14168ACC0006289A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Git Viewer 2.app/Git Viewer 2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Git Viewer 2/Git Viewer 2-Prefix.pch";
+				INFOPLIST_FILE = "Git Viewer 2Tests/Git Viewer 2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D67A59AD14168ACC0006289A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Git Viewer 2.app/Git Viewer 2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Git Viewer 2/Git Viewer 2-Prefix.pch";
+				INFOPLIST_FILE = "Git Viewer 2Tests/Git Viewer 2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D67A596A14168ACC0006289A /* Build configuration list for PBXProject "Git Viewer 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67A59A614168ACC0006289A /* Debug */,
+				D67A59A714168ACC0006289A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D67A59A814168ACC0006289A /* Build configuration list for PBXNativeTarget "Git Viewer 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67A59A914168ACC0006289A /* Debug */,
+				D67A59AA14168ACC0006289A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D67A59AB14168ACC0006289A /* Build configuration list for PBXNativeTarget "Git Viewer 2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67A59AC14168ACC0006289A /* Debug */,
+				D67A59AD14168ACC0006289A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D67A596714168ACC0006289A /* Project object */;
+}
