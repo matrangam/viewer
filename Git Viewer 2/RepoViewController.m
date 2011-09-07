@@ -17,10 +17,9 @@
 - (void)searchGitRepos:(NSString *)text;
 @end
 
-NSString *const searchParams = @"ztask";
-NSString *const user = @"matrangam";
-
 @implementation RepoViewController
+
+NSString *const user = @"matrangam";
 
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     
@@ -39,12 +38,10 @@ NSString *const user = @"matrangam";
         NSString *last_push = [repo objectForKey:@"pushed_at"];
         [repoActivity addObject:(last_push.length > 0 ? last_push:@"No Activity")];
         
-        NSString *repoURLString = [NSString stringWithFormat:@"https://github.com/api/v2/json/repos/show/%@", user];
-        repoURLString = [NSString stringWithFormat:@"https://github.com/api/v2/json/repos/show/%@", user];        
+        NSString *repoURLString = [NSString stringWithFormat:@"https://github.com/api/v2/json/repos/show/%@", user];       
         [repoData addObject:[NSURL URLWithString:repoURLString]];
         
     }
-    debug(@"table =====> %@", repoNames);
     [self.tableView reloadData];
     [jsonString release];
 }
@@ -145,7 +142,6 @@ NSString *const user = @"matrangam";
     }
     
     cell.textLabel.text =  [repoNames objectAtIndex: [indexPath row]];
-    cell.textLabel.textColor = [UIColor orangeColor];
     
     return cell;
 }
@@ -158,7 +154,8 @@ NSString *const user = @"matrangam";
     commitView.title = @"Commits";
     commitView.repoID = [repoNames objectAtIndex:indexPath.row];
     
-    [self.navigationController pushViewController:commitView animated:YES];    
+    [self.navigationController pushViewController:commitView animated:YES];  
+    [commitView release];
     
 }
 - (void)dealloc {

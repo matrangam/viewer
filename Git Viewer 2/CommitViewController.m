@@ -4,12 +4,12 @@
 
 #define debug(format, ...) CFShow([NSString stringWithFormat:format, ## __VA_ARGS__]);
 
-@interface RepoViewController(private)
+@interface CommitViewController(private)
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data;
 - (void)getCommits:(NSString *)text;
-@end
+- (void)getBranches:(NSString *)text;
 
-NSString *const user = @"matrangam";
+@end
 
 @implementation CommitViewController
 @synthesize repoID;
@@ -17,92 +17,24 @@ NSString *const user = @"matrangam";
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     NSString *jsonString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     NSDictionary *results = [NSDictionary dictionaryWithJSON:jsonString];
-    NSDictionary *commits = [results objectForKey:@"commits"];
+    commitData = [[results objectForKey:@"commits"] retain];
     
-    for (NSDictionary *commit in commits) {
-        NSString *author = [commit objectForKey:@"author"];
-        [authorNames addObject:(author.length > 0 ? author:@"No Author")];
-                                
-    }
+    [self.tableView reloadData];
+    [jsonString release];
     
-    
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-(void)getCommits:(NSString *)text {
+
+    NSString *urlString =[NSString stringWithFormat:@"https://github.com/api/v2/json/commits/list/matrangam/Book-Check/master"];
+    NSURL *url = [NSURL URLWithString:urlString];
+    
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [connection release];
+    [request release];
+    
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -123,15 +55,12 @@ NSString *const user = @"matrangam";
 
 #pragma mark - View lifecycle
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
+    commitData = [[NSMutableArray alloc] init];
+    
+    [self getCommits:@"matrangam"];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewDidUnload
@@ -169,85 +98,43 @@ NSString *const user = @"matrangam";
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+
     // Return the number of rows in the section.
-    return 0;
+    return commitData.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
+    //branch name
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
     
-    // Configure the cell...
+    NSDictionary* c = [commitData objectAtIndex:indexPath.row];
+    cell.textLabel.text = [c valueForKeyPath:@"author.name"];
+    cell.detailTextLabel.text = [[c valueForKeyPath:@"tree"] substringToIndex:7];
     
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
 }
 
 @end

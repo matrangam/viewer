@@ -10,8 +10,11 @@
 
 @interface CommitViewController : UITableViewController {
     NSString* repoID;
-    NSMutableArray *commits;
     NSMutableArray *authorNames;
+    NSMutableArray *commitHashes;
+    NSMutableArray *commitMessages;
+    NSMutableArray *commitUrls;
+    NSMutableArray *commitData;    
 }
 
 @property(nonatomic, retain) NSString* repoID;
