@@ -14,7 +14,8 @@
     NSMutableArray *commitHashes;
     NSMutableArray *commitMessages;
     NSMutableArray *commitUrls;
-    NSMutableArray *commitData;    
+    NSMutableArray *commitData;
+    NSMutableArray *branchData;
 }
 
 @property(nonatomic, retain) NSString* repoID;
