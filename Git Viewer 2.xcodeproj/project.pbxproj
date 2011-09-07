@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60B895E1417ECFC00CF13BF /* CommitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60B895C1417ECFB00CF13BF /* CommitViewController.m */; };
+		D60B895F1417ECFC00CF13BF /* CommitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60B895D1417ECFC00CF13BF /* CommitViewController.xib */; };
+		D60B89631417F51700CF13BF /* RepoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60B89611417F51700CF13BF /* RepoViewController.m */; };
+		D60B89641417F51700CF13BF /* RepoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60B89621417F51700CF13BF /* RepoViewController.xib */; };
 		D67A597514168ACC0006289A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67A597414168ACC0006289A /* UIKit.framework */; };
 		D67A597714168ACC0006289A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67A597614168ACC0006289A /* Foundation.framework */; };
 		D67A597914168ACC0006289A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67A597814168ACC0006289A /* CoreGraphics.framework */; };
@@ -14,8 +18,6 @@
 		D67A598114168ACC0006289A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D67A598014168ACC0006289A /* main.m */; };
 		D67A598514168ACC0006289A /* Git_Viewer_2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D67A598414168ACC0006289A /* Git_Viewer_2AppDelegate.m */; };
 		D67A598814168ACC0006289A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D67A598614168ACC0006289A /* MainWindow.xib */; };
-		D67A598B14168ACC0006289A /* Git_Viewer_2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D67A598A14168ACC0006289A /* Git_Viewer_2ViewController.m */; };
-		D67A598E14168ACC0006289A /* Git_Viewer_2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D67A598C14168ACC0006289A /* Git_Viewer_2ViewController.xib */; };
 		D67A599614168ACC0006289A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67A599514168ACC0006289A /* SenTestingKit.framework */; };
 		D67A599714168ACC0006289A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67A597414168ACC0006289A /* UIKit.framework */; };
 		D67A599814168ACC0006289A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67A597614168ACC0006289A /* Foundation.framework */; };
@@ -23,6 +25,7 @@
 		D67A59A114168ACC0006289A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D67A599F14168ACC0006289A /* InfoPlist.strings */; };
 		D67A59A314168ACC0006289A /* Git_Viewer_2Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = D67A59A214168ACC0006289A /* Git_Viewer_2Tests.h */; };
 		D67A59A514168ACC0006289A /* Git_Viewer_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D67A59A414168ACC0006289A /* Git_Viewer_2Tests.m */; };
+		D67A59D61416A4410006289A /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D67A59D51416A4410006289A /* JSONKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,26 +39,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D60B895B1417ECFB00CF13BF /* CommitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitViewController.h; sourceTree = "<group>"; };
+		D60B895C1417ECFB00CF13BF /* CommitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitViewController.m; sourceTree = "<group>"; };
+		D60B895D1417ECFC00CF13BF /* CommitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommitViewController.xib; sourceTree = "<group>"; };
+		D60B89601417F51700CF13BF /* RepoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = RepoViewController.h; sourceTree = "<group>"; };
+		D60B89611417F51700CF13BF /* RepoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepoViewController.m; sourceTree = "<group>"; };
+		D60B89621417F51700CF13BF /* RepoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepoViewController.xib; sourceTree = "<group>"; };
 		D67A597014168ACC0006289A /* Git Viewer 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Git Viewer 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67A597414168ACC0006289A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D67A597614168ACC0006289A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D67A597814168ACC0006289A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D67A597C14168ACC0006289A /* Git Viewer 2-Info.plist */ = {isa = PBXFileReference; path = "Git Viewer 2-Info.plist"; sourceTree = "<group>"; };
+		D67A597C14168ACC0006289A /* Git Viewer 2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Git Viewer 2-Info.plist"; sourceTree = "<group>"; };
 		D67A597E14168ACC0006289A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D67A598014168ACC0006289A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D67A598214168ACC0006289A /* Git Viewer 2-Prefix.pch */ = {isa = PBXFileReference; path = "Git Viewer 2-Prefix.pch"; sourceTree = "<group>"; };
-		D67A598314168ACC0006289A /* Git_Viewer_2AppDelegate.h */ = {isa = PBXFileReference; path = Git_Viewer_2AppDelegate.h; sourceTree = "<group>"; };
+		D67A598214168ACC0006289A /* Git Viewer 2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Git Viewer 2-Prefix.pch"; sourceTree = "<group>"; };
+		D67A598314168ACC0006289A /* Git_Viewer_2AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Git_Viewer_2AppDelegate.h; sourceTree = "<group>"; };
 		D67A598414168ACC0006289A /* Git_Viewer_2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Git_Viewer_2AppDelegate.m; sourceTree = "<group>"; };
 		D67A598714168ACC0006289A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		D67A598914168ACC0006289A /* Git_Viewer_2ViewController.h */ = {isa = PBXFileReference; path = Git_Viewer_2ViewController.h; sourceTree = "<group>"; };
-		D67A598A14168ACC0006289A /* Git_Viewer_2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Git_Viewer_2ViewController.m; sourceTree = "<group>"; };
-		D67A598D14168ACC0006289A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Git_Viewer_2ViewController.xib; sourceTree = "<group>"; };
 		D67A599414168ACC0006289A /* Git Viewer 2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Git Viewer 2Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67A599514168ACC0006289A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		D67A599E14168ACC0006289A /* Git Viewer 2Tests-Info.plist */ = {isa = PBXFileReference; path = "Git Viewer 2Tests-Info.plist"; sourceTree = "<group>"; };
+		D67A599E14168ACC0006289A /* Git Viewer 2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Git Viewer 2Tests-Info.plist"; sourceTree = "<group>"; };
 		D67A59A014168ACC0006289A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D67A59A214168ACC0006289A /* Git_Viewer_2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Git_Viewer_2Tests.h; sourceTree = "<group>"; };
 		D67A59A414168ACC0006289A /* Git_Viewer_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Git_Viewer_2Tests.m; sourceTree = "<group>"; };
+		D67A59D41416A4410006289A /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		D67A59D51416A4410006289A /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,13 +124,18 @@
 		D67A597A14168ACC0006289A /* Git Viewer 2 */ = {
 			isa = PBXGroup;
 			children = (
+				D67A59D41416A4410006289A /* JSONKit.h */,
+				D67A59D51416A4410006289A /* JSONKit.m */,
 				D67A598314168ACC0006289A /* Git_Viewer_2AppDelegate.h */,
 				D67A598414168ACC0006289A /* Git_Viewer_2AppDelegate.m */,
 				D67A598614168ACC0006289A /* MainWindow.xib */,
-				D67A598914168ACC0006289A /* Git_Viewer_2ViewController.h */,
-				D67A598A14168ACC0006289A /* Git_Viewer_2ViewController.m */,
-				D67A598C14168ACC0006289A /* Git_Viewer_2ViewController.xib */,
 				D67A597B14168ACC0006289A /* Supporting Files */,
+				D60B895B1417ECFB00CF13BF /* CommitViewController.h */,
+				D60B895C1417ECFB00CF13BF /* CommitViewController.m */,
+				D60B895D1417ECFC00CF13BF /* CommitViewController.xib */,
+				D60B89601417F51700CF13BF /* RepoViewController.h */,
+				D60B89611417F51700CF13BF /* RepoViewController.m */,
+				D60B89621417F51700CF13BF /* RepoViewController.xib */,
 			);
 			path = "Git Viewer 2";
 			sourceTree = "<group>";
@@ -229,7 +242,8 @@
 			files = (
 				D67A597F14168ACC0006289A /* InfoPlist.strings in Resources */,
 				D67A598814168ACC0006289A /* MainWindow.xib in Resources */,
-				D67A598E14168ACC0006289A /* Git_Viewer_2ViewController.xib in Resources */,
+				D60B895F1417ECFC00CF13BF /* CommitViewController.xib in Resources */,
+				D60B89641417F51700CF13BF /* RepoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +281,9 @@
 			files = (
 				D67A598114168ACC0006289A /* main.m in Sources */,
 				D67A598514168ACC0006289A /* Git_Viewer_2AppDelegate.m in Sources */,
-				D67A598B14168ACC0006289A /* Git_Viewer_2ViewController.m in Sources */,
+				D67A59D61416A4410006289A /* JSONKit.m in Sources */,
+				D60B895E1417ECFC00CF13BF /* CommitViewController.m in Sources */,
+				D60B89631417F51700CF13BF /* RepoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,14 +320,6 @@
 				D67A598714168ACC0006289A /* en */,
 			);
 			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		D67A598C14168ACC0006289A /* Git_Viewer_2ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D67A598D14168ACC0006289A /* en */,
-			);
-			name = Git_Viewer_2ViewController.xib;
 			sourceTree = "<group>";
 		};
 		D67A599F14168ACC0006289A /* InfoPlist.strings */ = {
@@ -443,6 +451,7 @@
 				D67A59AA14168ACC0006289A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D67A59AB14168ACC0006289A /* Build configuration list for PBXNativeTarget "Git Viewer 2Tests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +460,7 @@
 				D67A59AD14168ACC0006289A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

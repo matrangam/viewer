@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class Git_Viewer_2ViewController;
-
 @interface Git_Viewer_2AppDelegate : NSObject <UIApplicationDelegate>
+{
+}
+
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
 
-@property (nonatomic, retain) IBOutlet Git_Viewer_2ViewController *viewController;
 
 @end
